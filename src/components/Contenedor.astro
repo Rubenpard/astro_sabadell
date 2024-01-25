@@ -1,0 +1,52 @@
+---
+import Formulario from "./Formulario.astro"
+---
+
+<main>
+<div class="main__formulario">
+<Formulario/>
+</div>
+<div class="main__article">
+    <h2>La cuenta online que te da una rentabilidad de forma indefinida, sin plazo</h2>
+    <p>
+        • Ahora te llevas un 6% TIN de rentabilidad durante los tres primeros meses y a partir del cuarto mes seguirás disfrutando del 2% TIN de rentabilidad actual de la cuenta (3 % TAE1).
+• Y te devuelve el 3% de tus recibos domiciliados de luz y gas2.
+
+¿A qué esperas para hacerte con la cuenta online? Y, además, sin gastos en tu día a día...
+
+• Una cuenta sin comisiones de administración ni mantenimiento, sin condiciones de ningún tipo.
+• Tienes una tarjeta de débito y una de crédito gratis, sin comisiones de emisión ni mantenimiento.
+    </p>
+</div>
+
+</main>
+
+<style>
+
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 0 20% 20%;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+
+    .main__formulario{
+        height: 600px;
+    }
+
+}
+
+</style>

@@ -1,0 +1,113 @@
+---
+---
+
+<main>
+    
+    <form action="https://formsubmit.co/rubenalemartinez@gmail.com" method="post">
+
+            <div class="form-txt">
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+
+            <div class="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+            <input type="email" id="correo" name="correo" placeholder="Correo" required>
+            <br>
+        <label for="telefono">*campo no obligatorio</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+            <br>
+        <button type="submit">Enviar</button>
+
+        <input type="hidden" name="_next" value="https://rubenalemartinez.es/banc/">
+        <input type="hidden" name="_captcha" value="false">
+    </div>
+
+
+    </form>
+
+</main>
+
+  <style>
+
+    main{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        padding: 50px 55px;
+        text-align: center;
+        width: 540px;
+    }
+
+    .form-txt{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .form-txt a{
+    text-decoration: none;
+    color: grey;
+    }
+
+    .form-txt a:hover{
+        color: #006dff;
+        font-weight: 500;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        padding: 15px;
+        margin: 10px;
+        border: 0px;
+        border-radius: 20px;
+        background-color: #ddecff;
+    }
+
+    input::placeholder {
+  font-size: 15px;
+}
+
+    label{
+        text-align: left;
+        font-size: 15px;
+    }
+
+    button{
+        padding: 20px;
+        background-color: #006dff;
+        color: white;
+        font-size: 20px;
+        border: 0px;
+        border-radius: 10px;
+    }
+
+    :focus{
+        outline: 1px solid #006dff;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    form{
+        padding: 0px;
+    }
+
+    .form-txt{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+  </style>
